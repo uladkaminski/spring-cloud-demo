@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: random-producer
+  cloud:
+    config:
+      uri: http://config-server
+      discovery:
+        enabled: true
+server:
+  port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8282/eureka}
