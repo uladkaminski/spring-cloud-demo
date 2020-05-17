@@ -7,7 +7,7 @@ spring:
       discovery:
         enabled: true
 server:
-  port: 0
+  port: 9898
 eureka:
   client:
     serviceUrl:
